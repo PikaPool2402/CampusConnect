@@ -217,3 +217,20 @@ input[type=email] {
     transition: ease, 0.3s;
     cursor: pointer;
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 1000px) {
+    .container {
+        display: block;
+    }
+
+    .left_box {
+        width: 100%;
+        border-radius: 15px;   
+    }
+
+    .right_box {
+        width: 100%;
+        border-radius: 15px;
+    }
+}

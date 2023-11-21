@@ -315,3 +315,58 @@ footer{
     padding: 1.5rem;
     margin-top: 3rem;
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 1200px) {
+    .content .container{
+        display: block;
+    }
+
+    .content_box {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 940px) {
+    .showcase .container {
+        display: block;
+    }
+
+    .showcase_box {
+        width: 60%;
+        margin: auto;
+    }
+
+    .showcase_img {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 550px) {
+    .logo p {
+        padding-top: 2px;
+        text-align: center;
+    }
+
+    nav {
+        height: 180px;
+    }
+
+    nav .container {
+        display: block;
+    }
+
+    nav ul {
+        display: block;
+
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav ul li {
+        padding: 2px;
+        margin-left: 0px;
+    }
+}

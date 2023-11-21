@@ -204,3 +204,30 @@ footer{
     margin: 0 auto;
   }
 }
+
+@media (max-width: 550px) {
+  .logo p {
+      padding-top: 2px;
+      text-align: center;
+  }
+
+  nav {
+      height: 180px;
+  }
+
+  nav .container {
+      display: block;
+  }
+
+  nav ul {
+      display: block;
+
+      padding: 10px;
+      text-align: center;
+  }
+
+  nav ul li {
+      padding: 2px;
+      margin-left: 0px;
+  }
+}
