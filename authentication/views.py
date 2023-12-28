@@ -74,3 +74,9 @@ def signout(request):
     logout(request)
     messages.success(request, "logged Out Successfully")
     return redirect('home')
+
+def portal(request):
+    return render(request, "authentication/portal.html")
+
+def contact(request):
+    return render(request, "authentication/contact.html")

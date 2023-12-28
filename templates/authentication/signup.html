@@ -1,17 +1,16 @@
+{% load static %}
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/sign-up.css">
+
+        <title>CampusConnect</title>
+
+        <link rel="stylesheet" href="{% static 'styles/sign-up.css'%}">
     </head>
+
     <body>
         {% for message in messages %}
         <div class="alert alert-{{message.tags}} alert-dismissible fade show" role=""alert>
@@ -22,35 +21,70 @@
         </div>
         {% endfor %}
 
-        <h3>Sign Up</h3>
-        
-        <form action="/signup" method = "post">
-            {% csrf_token %}
-            <label for="">Username</label>
-            <input type="text" id = "username" name = "username" placeholder="Create a username(only letter and numbers)"Required>
-            <br>
-             
-            <label for="">First Name</label>
-            <input type="text" id = "fname" name = "fname" placeholder="Enter Your first Name"Required>
-            <br>
+        <main>
+        <section>
+            <div class="container">
 
-            <label for="">Last Name</label>
-            <input type="text" id = "lname" name = "lname" placeholder="Enter Your Last Name"Required>
-            <br>
+                <div class="left_box">
+                    <h2>Get Started.</h2>
 
-            <label for="">Email Address</label>
-            <input type="email" id = "email" name = "email" placeholder="Enter Email Address"Required>
-            <br>
+                    <div class="login-form">
+                        <form action="/signup" method = "post">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label class="form-label">Userame</label><br>
+                                <input type="text" id="username" name="username" class="form-input" placeholder="Enter Your Name" autocomplete="on" required>
+                            </div>
 
-            <label for="">Password</label>
-            <input type="password" id = "pass1" name = "pass1" placeholder="Create a Password"Required>
-            <br>
+                            <div class="form-group">
+                                <label class="form-label">First Name</label><br>
+                                <input type="text" id="fname" name="fname" class="form-input" placeholder="Enter Your Email" autocomplete="on" required>
+                            </div>
 
-            <label for="">Confim Password</label>
-            <input type="password" id = "pass2" name = "pass2" placeholder="Confrim a Password"Required>
+                            <div class="form-group">
+                                <label class="form-label">Last Name</label><br>
+                                <input type="text" id="lname" name="lname" class="form-input" placeholder="Enter Your Email" autocomplete="on" required>
+                            </div>
 
-            <button type="submit">Sign Up</button>
-        </form>
-        <script src="" async defer></script>
+                            <div class="form-group">
+                                <label class="form-label">Email</label><br>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="Enter Your Email" autocomplete="on" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Password</label><br>
+                                <input type="password" id="pass1" name="pass1" class="form-input" placeholder="Enter Your Password" autocomplete="on" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Confirm Password</label><br>
+                                <input type="password" id="pass2" name="pass2" class="form-input" placeholder="Confirm Your Password" autocomplete="on" required>
+                            </div>
+
+                            <div class="login-button">
+                                <button type="submit">
+                                    Sign Up!
+                                </button>
+                            </div>
+                        </form>
+                        <script src="" async defer></script>
+
+                        <p>Already have an account? <a href="{% url 'signin' %}">Login Here!</a></p>
+                    </div>
+                </div>
+
+                <div class="right_box">
+                    <img src="{% static 'images/sign-up.png' %}" alt="">
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script>
+        gsap.from('main', {opacity: 0, duration: 1, delay:0.5, y: 10})
+    </script>
     </body>
 </html>

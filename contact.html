@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusConnect</title>
+
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <p>CampusConnect</p>
+                </div>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portal.html">Portal</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Account</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="divider"><br></div>
+
+    <main>
+        <section class="left_box">
+            <h1>Contact Us</h1>
+            <p>Need to get in touch with us? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus omnis alias sint molestias laborum quidem quis reprehenderit minus voluptate eos officia animi, ipsam delectus quod accusamus inventore facere, repudiandae blanditiis?</p>
+        </section>
+
+        <section class="right_box">
+            <div class="login-form">
+                <form>
+                    <div class="form-group">
+                        <label class="form-label">Name</label><br>
+                        <input type="text" class="form-input" placeholder="Enter Your Name" autocomplete="on" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Email</label><br>
+                        <input type="email" class="form-input" placeholder="Enter Your Email" autocomplete="on" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Phone Number</label><br>
+                        <input type="tel" class="form-input" placeholder="Enter Your Number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Address</label><br>
+                        <input type="text" class="form-input" placeholder="Enter Your Name" autocomplete="on" required>
+                    </div>
+
+                    <div class="login-button">
+                        <button type="submit">
+                            <a href="index.html">Submit</a>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Copyright &copy; CampusConnect 2023</p>
+        </div>
+    </footer>
+
+    <!-- javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script>
+        gsap.from('.logo', {opacity: 0, duration: 1, delay:0.5, y: 10})
+        gsap.from('main', {opacity: 0, duration: 1, delay:0.9, y: 10})
+    </script>
+</body>

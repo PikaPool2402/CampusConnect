@@ -1,0 +1,236 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* GLOBAL */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: .938rem;
+    line-height: 1.5;
+
+    background-color: #EDFFFF;
+    color: #000;
+}
+
+main {
+    margin: 8vh;
+}
+
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #CAF0F8;
+}
+
+/* OVERLAY */
+.container {
+    display: flex;
+}
+
+/* LEFT BOX */
+.left_box {
+    width: 50%;
+    background: #fff;
+    
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.left_box h2 {
+    font-weight: bold;
+    font-size: 3.25rem;
+    
+    text-align: center;
+    margin: 2.25rem 0 1.65rem 0;
+}
+
+/* RIGHT BOX */
+.right_box {
+    width: 50%;
+    background-color: #03045E;
+
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.right_box img {
+    width: 100%;
+    height: auto;
+}
+
+/* FORM */
+.form-group {
+    padding: 0.5rem;
+}
+
+.login-form {
+    width: 70%;
+    margin: auto;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-group :placeholder-shown {
+    opacity: 0.5;
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+
+    border: 0;
+    border-bottom: 2px solid #000;
+
+    transition: ease, 0.3s;
+}
+
+input[type=password] {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+
+    border: 0;
+    border-bottom: 2px solid #000;
+
+    transition: ease, 0.3s;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+
+    border: 0;
+    border-bottom: 2px solid #000;
+
+    transition: ease, 0.3s;
+}
+
+.form-input:focus {
+    border-bottom: 2px solid #48CAE4;
+    outline: 0px;
+
+    transition: ease, 0.3s;
+}
+
+.form-input:hover {
+    border-bottom: 2px solid #48CAE4;
+    outline: 0px;
+
+    transition: ease, 0.3s;
+}
+
+.login-form p {
+    font-size: 1.05rem;
+    text-align: center;
+}
+
+.login-form a {
+    color: black;
+    text-decoration: none;
+
+    transition: ease, 0.3s;
+}
+
+.login-form a:visited {
+    color: black;
+    text-decoration: none;
+
+    transition: ease, 0.3s;
+}
+
+.login-form p a:hover {
+    color: #48CAE4;
+    text-decoration: underline;
+    
+    transition: ease, 0.3s;
+}
+
+/* BUTTON */
+.login-button {
+    text-align: center;
+    margin: 1.5rem 0 1.65rem 0;
+}
+
+.login-button a {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.login-button a:hover {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.login-button a:visited {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.login-button button {
+    border-radius: 8px;
+    background: #17252A;
+
+    width: 40%;
+    padding: 14px;
+
+    font-weight: bold;
+    font-size: 1.075rem;
+     
+    color: #f5f5f5;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    
+    transition: ease, 0.3s;
+    cursor: pointer;
+}
+
+.login-button button:hover {
+    transform: scale(105%);
+
+    transition: ease, 0.3s;
+    cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1000px) {
+    .container {
+        display: block;
+    }
+
+    .left_box {
+        width: 100%;
+        border-radius: 15px;   
+    }
+
+    .right_box {
+        width: 100%;
+        border-radius: 15px;
+    }
+}

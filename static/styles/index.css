@@ -1,0 +1,422 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* GLOBAL */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: .938rem;
+    line-height: 1.5;
+
+    background-color: #fff;
+    color: #000;
+}
+
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #CAF0F8;
+}
+
+/* NAVBAR */
+nav {
+    height: 4rem;
+    background: #fff;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+
+    height: 100%;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+.logo p {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+nav a {
+    color: #000;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: ease-in 0.2s;
+}
+
+nav a:hover {
+    color: #0096C7;
+
+    transition: ease-in 0.2s;
+}
+
+/* DIVIDER */
+.divider {
+    max-height: 0.40rem;
+    background-color: #023E8A;
+}
+
+/* LANDING */
+.landing {
+    min-height: 30rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-image: url('http://127.0.0.1:8000/static/images/index/landing.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.landing .container {
+    width: 60%;
+    margin: auto;
+}
+
+.landing h1 {
+    font-size: 4.5rem;
+    font-weight: bold;
+
+    text-align: center;
+}
+
+.landing p {
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    text-align: center;
+}
+
+.landing a {
+    color: white;
+    text-decoration: none;
+    
+    transition: ease, 0.3s;
+}
+
+.landing a:hover {
+    color: white;
+    text-decoration: none;
+
+    transform: scale(105%);
+    transition: ease, 0.3s;
+}
+
+.landing a:visited {
+    color: white;
+    text-decoration: none;
+
+    transition: ease, 0.3s;
+}
+
+.landing button {
+    font-size: 1.3rem;
+    text-align: center;
+
+    border: 0;
+    border-radius: 8px;
+    background-color: #023E8A;
+
+    padding: 1rem;
+    margin: 0.5rem;
+
+    transition: ease, 0.3s;
+    cursor: pointer;
+}
+
+.landing button:hover {
+    transform: scale(105%);
+    transition: ease, 0.3s;
+    cursor: pointer;
+}
+
+.btn-class {
+    display: flex;
+    justify-content: center;
+    
+    margin: 1rem;
+}
+
+/* SHOWCASE */
+.showcase .container {
+    display: flex;
+    min-height: 30rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.showcase_img img {
+    width: 100%;
+    height: auto;
+}
+
+.showcase_box {
+    box-shadow: 5px 5px 8px 2px lightgray;
+    background: #e9ecef;
+
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.showcase_box h1 {
+    font-size: 3rem;
+    font-weight: bold;
+
+    text-align: center;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+}
+
+.showcase_box p {
+    font-size: 1.15rem;
+    
+    text-align: justify;
+    padding: 0 2.5rem 2rem 2.5rem;
+}
+
+/* CONTENT */
+.content {
+    margin: 1rem;
+}
+
+.content .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_box {
+    color: #f8f9fa;
+    background: #023E8A;
+    box-shadow: 5px 5px 8px 2px lightgray;
+
+    border-radius: 10px;
+    margin: 1.5rem;
+}
+
+.content_box h2 {
+    font-size: 2rem;
+    font-weight: bold;
+
+    text-align: center;
+    margin: 1.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.content_box p { 
+    font-size: 1rem;
+
+    text-align: justify;
+    padding: 0 2rem 1.5rem 2rem;
+}
+
+/* INTERIM */
+.interim {
+    min-height: 25rem;
+
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-image: url('http://127.0.0.1:8000/static/images/index/interim.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.interim .container {
+    width: 60%;
+    margin: auto;
+}
+
+.interim h1 {
+    color: #03045E;
+    font-size: 3rem;
+    font-weight: bold;
+
+    text-align: center;
+    margin: 1rem;
+}
+
+.interim h2 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+
+    text-align: center;
+    margin: 1rem;
+}
+
+.interim p {
+    color: #030455;
+    font-size: 2rem;
+
+    text-align: center;
+    margin: 1rem;
+}
+
+/* CONTACT-US */
+.contact-us {
+    margin: 1rem;
+}
+
+.contact-us h1 {
+    font-size: 3rem;
+    text-align: center;
+
+    margin: 1rem;
+}
+
+.contact-us p {
+    font-size: 1.4rem;
+    text-align: center;
+
+    margin: 1.2rem;
+}
+
+.contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 2rem;
+}
+
+.contact-us a {
+    opacity: 0.8;
+    color: black;
+    text-decoration: none;
+    
+    transition: ease, 0.3s;
+}
+
+.contact-us a:hover {
+    opacity: 0.8;
+    color: black;
+    text-decoration: none;
+
+    transform: scale(105%);
+    transition: ease, 0.3s;
+}
+
+.contact-us a:visited {
+    opacity: 0.8;
+    color: black;
+    text-decoration: none;
+
+    transition: ease, 0.3s;
+}
+
+.contact-us button {
+    font-size: 1.3rem;
+    text-align: center;
+
+    border: 0;
+    border-radius: 8px;
+    background-color: #e9ecef;
+
+    padding: 1rem;
+    margin: 0.5rem;
+
+    transition: ease, 0.3s;
+    cursor: pointer;
+}
+
+.contact-us button:hover {
+    transform: scale(105%);
+    transition: ease, 0.3s;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer{
+    color: #f8f9fa;
+    text-align: center;
+    background-color: #03045E;
+
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1200px) {
+    .content .container{
+        display: block;
+    }
+
+    .content_box {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 940px) {
+    .showcase .container {
+        display: block;
+    }
+
+    .showcase_box {
+        width: 60%;
+        margin: auto;
+    }
+
+    .showcase_img {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 550px) {
+    .logo p {
+        padding-top: 2px;
+        text-align: center;
+    }
+
+    nav {
+        height: 180px;
+    }
+
+    nav .container {
+        display: block;
+    }
+
+    nav ul {
+        display: block;
+
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav ul li {
+        padding: 2px;
+        margin-left: 0px;
+    }
+}

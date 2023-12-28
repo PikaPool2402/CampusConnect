@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusConnect</title>
+
+    <link rel="stylesheet" href="css/sign-up.css">
+</head>
+    
+<body>
+    <main>
+        <section>
+            <div class="container">
+
+                <div class="left_box">
+                    <h2>Get Started.</h2>
+
+                    <div class="login-form">
+                        <form>
+                            <div class="form-group">
+                                <label class="form-label">Name</label><br>
+                                <input type="text" class="form-input" placeholder="Enter Your Name" autocomplete="on" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Email</label><br>
+                                <input type="email" class="form-input" placeholder="Enter Your Email" autocomplete="on" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Password</label><br>
+                                <input type="password" class="form-input" placeholder="Enter Your Password" autocomplete="on" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Confirm Password</label><br>
+                                <input type="password" class="form-input" placeholder="Confirm Your Password" autocomplete="on" required>
+                            </div>
+
+                            <div class="login-button">
+                                <button type="submit">
+                                    <a href="index.html">Sign Up!</a>
+                                </button>
+                            </div>
+                        </form>
+
+                        <p>Already have an account? <a href="login.html">Login Here!</a></p>
+                    </div>
+                </div>
+
+                <div class="right_box">
+                    <img src="images/sign-up.png" alt="">
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script>
+        gsap.from('main', {opacity: 0, duration: 1, delay:0.5, y: 10})
+    </script>
+</body>
+</html>

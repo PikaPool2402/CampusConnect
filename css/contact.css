@@ -1,0 +1,291 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* GLOBAL */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: .938rem;
+    line-height: 1.5;
+
+    background-color: #fff;
+    color: #000;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #CAF0F8;
+}
+
+/* NAVBAR */
+nav {
+    height: 4rem;
+    background: #fff;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+
+    height: 100%;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+.logo p {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+nav a {
+    color: #000;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: ease-in 0.2s;
+}
+
+nav a:hover {
+    color: #0096C7;
+
+    transition: ease-in 0.2s;
+}
+
+/* DIVIDER */
+.divider {
+    max-height: 0.40rem;
+    background-color: #023E8A;
+}
+
+/* LEFT BOX */
+.left_box {
+    width: 50%;
+    margin: 2rem;
+    padding: 1.5rem;
+}
+
+.left_box h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    
+    text-align: left;
+    margin: 2.25rem 0 1rem 0;
+}
+
+.left_box p {
+    font-size: 1rem;
+    
+    text-align: justify;
+}
+
+/* RIGHT BOX */
+.right_box {
+    width: 50%;
+    margin: 2rem;
+    padding: 2.25rem;
+    box-shadow: 8px 8px 15px 6px lightgray;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+/* FORM */
+.form-group {
+    padding: 0.5rem;
+}
+
+.login-form {
+    width: 80%;
+    margin: auto;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-group :placeholder-shown {
+    opacity: 0.5;
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+
+    border: 0;
+    border-bottom: 2px solid #000;
+
+    transition: ease, 0.3s;
+}
+
+input[type=tel] {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+
+    border: 0;
+    border-bottom: 2px solid #000;
+
+    transition: ease, 0.3s;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+
+    border: 0;
+    border-bottom: 2px solid #000;
+
+    transition: ease, 0.3s;
+}
+
+.form-input:focus {
+    border-bottom: 2px solid #48CAE4;
+    outline: 0px;
+
+    transition: ease, 0.3s;
+}
+
+.form-input:hover {
+    border-bottom: 2px solid #48CAE4;
+    outline: 0px;
+
+    transition: ease, 0.3s;
+}
+
+/* BUTTON */
+.login-button {
+    text-align: center;
+    margin: 1.6rem 0 1rem 0;
+}
+
+.login-button a {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.login-button a:hover {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.login-button a:visited {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.login-button button {
+    border-radius: 8px;
+    background: #17252A;
+
+    width: 40%;
+    padding: 14px;
+
+    font-weight: bold;
+    font-size: 1.075rem;
+     
+    color: #f5f5f5;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    
+    transition: ease, 0.3s;
+    cursor: pointer;
+}
+
+.login-button button:hover {
+    transform: scale(105%);
+
+    transition: ease, 0.3s;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer{
+    color: #f8f9fa;
+    text-align: center;
+    background-color: #03045E;
+
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 940px) {
+    main {
+        display: block;
+    }
+
+    .left_box {
+        width: 60%;
+        margin: auto;
+    }
+
+    .right_box {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 550px) {
+    .logo p {
+        padding-top: 2px;
+        text-align: center;
+    }
+
+    nav {
+        height: 180px;
+    }
+
+    nav .container {
+        display: block;
+    }
+
+    nav ul {
+        display: block;
+
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav ul li {
+        padding: 2px;
+        margin-left: 0px;
+    }
+}

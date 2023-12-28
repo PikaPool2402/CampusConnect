@@ -1,17 +1,17 @@
+{% load static %}
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<html lang="en">
+
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+
+        <title>CampusConnect</title>
+
+        <link rel="stylesheet" href="{% static 'styles/login.css'%}">
     </head>
+
     <body>
         {% for message in messages %}
         <div class="alert alert-{{message.tags}} alert-dismissible fade show" role=""alert>
@@ -22,19 +22,50 @@
         </div>
         {% endfor %}
 
-        <h3>Sign In</h3>
-        
-        <form action="/signin" method = "post">
-            {% csrf_token %}
-            <label for = "">Username</label>
-            <input type="text" id = "username" name = "username" placeholder="Enter your username" required>
-            <br>
-            <label for="">Password</label>
-            <input type="password" id = "pass1" name = "pass1" placeholder="Enter your Password" required>
-            <br>
-
-            <button type = "submit"> Sign In</button>
-        </form>
-        <script src="" async defer></script>
+        <main>
+            <section>
+                <div class="container">
+    
+                    <div class="left_box">
+                        <h2>Welcome.</h2>
+    
+                        <div class="login-form">
+                            <form action="/signin" method = "post">
+                                {% csrf_token %}
+                                <div class="form-group">
+                                    <label class="form-label">Username</label><br>
+                                    <input type="text" id="username" name="username" class="form-input" placeholder="Enter Your Name" autocomplete="on" required>
+                                </div>
+    
+                                <div class="form-group">
+                                    <label class="form-label">Password</label><br>
+                                    <input type="password" id="pass1" name="pass1" class="form-input" placeholder="Enter Your Password" autocomplete="on" required>
+                                </div>
+    
+                                <div class="login-button">
+                                    <button type="submit">
+                                        Login Now!
+                                    </button>
+                                </div>
+                            </form>
+                            <script src="" async defer></script>
+    
+                            <p>Don't have an account? <a href="{% url 'signup' %}">Sign Up Here!</a></p>
+                        </div>
+                    </div>
+    
+                    <div class="right_box">
+                        <img src="{% static 'images/login.png' %}" alt="">
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
+    
+        <!-- javascript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+        <script>
+            gsap.from('main', {opacity: 0, duration: 1, delay:0.5, y: 10})
+        </script>
     </body>
 </html>
